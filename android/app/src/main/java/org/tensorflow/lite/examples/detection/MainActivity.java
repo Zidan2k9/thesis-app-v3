@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final boolean TF_OD_API_IS_QUANTIZED = false;
 
-    private static final String TF_OD_API_MODEL_FILE = "yolov4-416-fp32.tflite"; //the model that will be used
+    private static final String TF_OD_API_MODEL_FILE = "yolov4-tiny-416-fp32.tflite"; //the model that will be used
 
     private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/coco.txt"; //labels
 
