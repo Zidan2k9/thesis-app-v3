@@ -5,7 +5,7 @@ import numpy as np
 import tensorflow as tf
 from core.config import cfg
 
-def load_freeze_layer(model='yolov4', tiny=False):
+def load_freeze_layer(model='yolov4', tiny=True):
     if tiny:
         if model == 'yolov3':
             freeze_layouts = ['conv2d_9', 'conv2d_12']
@@ -18,7 +18,7 @@ def load_freeze_layer(model='yolov4', tiny=False):
             freeze_layouts = ['conv2d_93', 'conv2d_101', 'conv2d_109']
     return freeze_layouts
 
-def load_weights(model, weights_file, model_name='yolov4', is_tiny=False):
+def load_weights(model, weights_file, model_name='yolov4', is_tiny=True):
     if is_tiny:
         if model_name == 'yolov3':
             layer_size = 13
