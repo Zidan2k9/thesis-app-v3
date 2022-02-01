@@ -1,0 +1,5 @@
+door
+stairs
+uneven_surface
+blade
+ball
